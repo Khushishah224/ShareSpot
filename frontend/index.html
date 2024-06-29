@@ -1,13 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- remix icons  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>ShareSpot</title>
-    
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    dfghjkcvbnm
+
+
+
+<body data-bs-spy="scroll">
+    <header class="header-section" id="home">
+        <nav class="navbar navbar-expand-sm  fixed-top ">
+            <div class="container-fluid ">
+                <div class="brand-logo p-1 mx-2">
+                    <a href="#" class="navbar-brand">
+                        <img style="height:60px;width:60px;border-radius: 50%;border: 3px solid black;"
+                            src="./img/LOGO.png">
+                    </a>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="link">
+                    <ul class="navbar-nav p-2">
+                        <li class="nav-item  text-white">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link" href="#section3">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white"
+                                data-bs-toggle="dropdown">LOCATIONS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Shyamal</a></li>
+                                <li><a href="#" class="dropdown-item">Vastrapur</a></li>
+                                <li><a href="#" class="dropdown-item">S.G.Highway</a></li>
+                                <li><a href="#" class="dropdown-item">Makarba</a></li>
+                                <li><a href="#" class="dropdown-item">Ambli</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#section5">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav p-2" id="profile">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/login.html">SIGN UP | SIGN IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="home" class="container-fluid" style="padding:200px;background-color: white;height: auto;width: auto;">
+        <div class="row">
+            <div class="col-sm-6 text-black">
+                <h1 style="font-size: 60px;"><i>Find workspaces</i></h1>
+                Work along like-minded professionals in our vibrant coworking spaces in Ahmedabad
+            </div>
+            <div class="col-sm-6">
+                <img src="./img/e537cb2f6a4f139e76cd07aceba57e9a.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section2" class="container-fluid text-white" style="padding:20px;background-color: black;">
+        <div class="new-arrival row ">
+            <div class="col-lg-4 col-sm-12">
+                <h2 class="text-center">Explore our<br><span> options</span></h2>
+                <p class=" para">Discover workspaces to get your creativity flowing</p>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide col-lg-8 " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="card-warpper ">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img class="" src="./img/image2.avif" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">East Face</h5>
+                                    <p class="card-text">b/h Maruti Suzuki Showroom, off Ambli - Bopal Road , Ambli
+                                        Ahmedabad
+                                        Gujarat
+                                        380058</p>
+                                    <a href="./html/Booking.html" class="btn ">Book now</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img class="" src="./img/317d5025b534a5a86440fe2f98526ff0.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sun Gravitas</h5>
+                                    <p class="card-text">A/328, Shyamal Cross Rd, Rajmani Society
+                                        Ahmedabad
+                                        Gujarat
+                                        380015
+                                    </p>
+                                    <a href="./html/Booking.html" class="btn">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-warpper">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img class="" src="./img/image1.avif" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ratnaakar Nine Square</h5>
+                                    <p class="card-text">11th Floor, Block-A
+                                        Ahmedabad
+                                        Gujarat
+                                        380015</p>
+                                    <a href="./html/Booking.html" class="btn ">Book now</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img class="" src="./img/image3.avif" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Privillion East Wing</h5>
+                                    <p class="card-text">Privillion, East Wing
+                                        Ahmedabad
+                                        Gujarat
+                                        380054</p>
+                                    <a href="./html/Booking.html" class="btn">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-warpper">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img class="" src="./img/image4.avif" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Earth Arise</h5>
+                                    <p class="card-text">Sarkhej-Gandhinagar Highway
+                                        Ahmedabad
+                                        Gujarat
+                                        380015</p>
+                                    <a href="./html/Booking.html" class="btn ">Book now</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img class="" src="./img/19d5d6f3a7061fee02465dfa3b401a57.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Privillion East Wing</h5>
+                                    <p class="card-text">Privillion, East Wing
+                                        Ahmedabad
+                                        Gujarat
+                                        380054</p>
+                                    <a href="./html/Booking.html" class="btn">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="section3" class="container-fluid text-black px-4" style="padding:100px; background-color: bisque;">
+        <div class="row text-center" >
+            <div class="col-sm-6 text-black">
+                <img src="./img/3b99aeaab295da236dd64f07d36a46e5.jpg">
+
+            </div>
+            <div class="col-sm-6" style="margin-left: 1px;">
+                <h1 style="font-size: 40px; " ><i>What is ShareSpot about?</i></h1>
+                We believe in giving businesses choice, flexibility and access to a thriving community
+                Work along like-minded professionals in our vibrant coworking spaces in Ahmedabad, with break out areas
+                and networking events to foster collaboration and growth. Drop in and hot-desk in an open-plan
+                workspace, or reserve your own dedicated desk in a shared office.
+
+            </div>
+        </div>
+        <div style="margin-left: 5%;">
+        </div>
+    </div>
+
+    <div id="section4" class="container-fluid text-black px-4" style="padding:20px; background-color: white;">
+        <h1 style="margin-left: 5%;">FAQs</h1>
+        <div id="accordion" style="margin-left: 5%;margin-top:40px;margin-bottom:40px;">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapse1" class="card-link text-dark" data-toggle="collapse">How much does a coworking
+                        space in Ahmedabad costs?</a>
+                </div>
+                <div id="collapse1" class="collapse hidden" data-parent="#accordion">
+                    <div class="card-body">Join a thriving community of professionals with our vibrant coworking spaces
+                        in Ahmedabad. Prices for renting a desk in a shared workspace start from INR 8,790 to INR 12,390
+                        per person per month. These prices are based on Regus.com prices and a 24-month contract. The
+                        actual price will vary by number of people, term of agreement, the specific coworking location
+                        and availability.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapse2" class="card-link text-dark" data-toggle="collapse">Can I book a coworking desk
+                        for a day in Ahmedabad?</a>
+                </div>
+                <div id="collapse2" class="collapse hidden" data-parent="#accordion">
+                    <div class="card-body">Yes, you can use a shared workspace in Ahmedabad for as long or as short as
+                        you need. Rent coworking space from as little as an hour to a day.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapse3" class="card-link text-dark" data-toggle="collapse">What types of workspace can
+                        you rent in Ahmedabad?</a>
+                </div>
+                <div id="collapse3" class="collapse hidden" data-parent="#accordion">
+                    <div class="card-body">You can either rent a dedicated desk that's reserved just for you, or drop-in
+                        and hot desk on demand at our centres in Ahmedabad.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapse4" class="card-link text-dark" data-toggle="collapse">Do I need to book a
+                        coworking space in advance?</a>
+                </div>
+                <div id="collapse4" class="collapse hidden" data-parent="#accordion">
+                    <div class="card-body">If you have reserved a dedicated desk in Ahmedabad, there's no need to book
+                        in advance. However, if you prefer to hot desk, it's a good idea to book a space via the Regus
+                        app, online or by phone to ensure a space is available.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapse5" class="card-link text-dark" data-toggle="collapse">Is there a minimum rental
+                        term?</a>
+                </div>
+                <div id="collapse5" class="collapse hidden" data-parent="#accordion">
+                    <div class="card-body">There is no minimum rental term when using our coworking spaces. You can use
+                        a coworking space in any of our centres around the world for a minimum of one hour or reserve a
+                        dedicated desk for as long as you need. For even more flexibility, our coworking membership
+                        gives you access to coworking desks by the day or for five, ten or unlimited days' access per
+                        month.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section stars here  -->
+    <div class="bg-black px-4  text-white footer-div" id="section5">
+        <footer class="py-5 ">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3 mx-auto " style="border-right:1px solid white">
+                    <h5 class="mb-3">Navigate</h5>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 ">Back to top</a></li>
+                        <li class="nav-item mb-2"><a href="#section4" class="nav-link p-0 ">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#section3" class="nav-link p-0 ">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3 mx-auto ">
+                    <h5 class="mb-3">PRIVACY & TERMS</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Terms & Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Privacy Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Cookies Settings</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Terms of Use</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Accessibility Statement</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 mb-3 mx-auto ">
+                    <form class=" text-center">
+                        <h5 class="headings">Subscribe for updates</h5>
+                        <p class="text-secondary ">Get the latest updates about workspaces</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <!-- <label for="newsletter1" class="visually-hidden">Email address</label> -->
+                            <input id="newsletter1" type="text" class="form-control " placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-white socialandicons">
+                <p class="text-white px-5">&copy; 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex  justify-content-around pb-4 px-3 ">
+                    <li class=" ps-3 "><a class=" text-decoration-none  icons" href="#"><i
+                                class="ri-twitter-fill "></i></a></li>
+                    <li class=" ps-3"><a class="text-decoration-none  icons" href="#"><i
+                                class="ri-instagram-fill"></i></a></li>
+                    <li class=" ps-3"><a class="text-decoration-none  icons" href="#"><i
+                                class="ri-facebook-fill"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- footer section ends here  -->
 </body>
+
 </html>

@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --heading-font: 'sans-serif', serif;
+    --normal-font: "Montserrat", sans-serif;
+    --designing-font: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--normal-font);
+    color: #fff;
+    background-color: #000;
+
+}
+
+/* header  */
+
+.header-section nav {
+    background-color: #000;
+}
+
+.header-section .navbar-brand {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 3rem;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.header-section .nav-link { 
+    border-bottom: 2px solid transparent;
+    color: #fff;
+}
+
+.header-section .nav-link:hover {
+    color: #ccc;
+    border-color: #fff;
+}
+
+.header-section .navbar-brand:hover {
+    color: #fff;
+}
+
+
+.header-section .navbar button {
+    background-color: #fff;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#profile {
+    margin-left: auto;
+}
+
+#profile a i {
+    font-size: 2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+/* .home_bg_image{
+    background-image: url("../images/e537cb2f6a4f139e76cd07aceba57e9a.jpg");
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+} */
+/* new arrivals */
+.new-arrival{
+    padding: 4rem 0;
+    background-color: #000;
+    margin-top: 0;
+
+}
+
+.new-arrival h2{
+    font-family: var(--designing-font);
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+    animation-name:textanimation;
+    animation-duration: 5s;
+    position: relative;
+}
+
+.new-arrival .para{
+    font-family: var(--normal-font);
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation-name:textanimation;
+    animation-duration: 8s;
+    position: relative;
+
+}
+
+@keyframes textanimation{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.new-arrival .card-body{
+    background-color: #000;
+    color: #fff;
+}
+
+.new-arrival .card-body h5{
+    font-family: var(--designing-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.new-arrival .card-body a{
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 300;
+    border : 2px solid transparent;
+    padding: 0.5rem;
+}
+
+.new-arrival .card-body a:hover{
+    border : 2px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+.new-arrival h2 span{
+    font-family: var(--designing-font);
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-style: italic;
+    border-bottom: 2px solid #fff;
+}
+
+.new-arrival h2 span:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.new-arrival .card-warpper{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.new-arrival .card{
+    margin: 0 .5rem;
+    width:calc(100% / 3);
+    max-width: 20rem;
+    border: none;
+}
+
+.new-arrival .img-wrapper{
+    height: 25rem;
+    
+}
+
+.new-arrival .img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width:768px) {
+    html,body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+     .header-section .navbar button {
+        margin-right: 1rem;
+    }
+
+
+    .header-section .navbar-nav {
+        align-items: center;
+    }
+    .new-arrival h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .new-arrival h2 span{
+        font-size: 4rem;
+        text-align: center;
+        
+    }
+    
+    .new-arrival .card-warpper {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+    .new-arrival .card {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+  }
+
+
+@media only screen and (max-width:310px) {
+
+    .header-section .navbar button {
+        margin: auto;
+    }
+
+    .header-section .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .new-arrival h2{
+       
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .new-arrival h2 span{
+        
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .new-arrival .card{
+        width: 100%;
+        max-width: 12rem;
+    }
+}
+
+@media only screen and (max-width:254px) {
+    .new-arrival h2{
+       
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .new-arrival h2 span{
+        
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width:310px) {
+
+    .footer-div .socialandicons {
+        font-size: 12px;
+        color: #ccc;
+        font-weight: 600;
+        margin: 0;
+        margin:auto;
+    }
+}
+/* footer  */
+.footer-div{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    
+}
+
+.footer-div h5 {
+    font-family: var(--normal-font);
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+footer{
+    border-top: 2px solid #fff;
+}
+
+.footer-div .headings {
+    font-family: var(--designing-font);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+.footer-div .nav-link {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 600;
+}
+
+.footer-div .nav-link:hover {
+    color: #deb887;
+    text-shadow: 1px 1px 2px #ccc;
+
+}
+
+.footer-div p {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.footer-div .socialandicons ul li a {
+    margin-left: 1.5rem;
+
+}
+
+.footer-div .icons {
+    color: #fff
+}
+
+.footer-div .icons:hover {
+    color: burlywood;
+    text-shadow: 1px 1px 2px #ccc;
+}

@@ -8,6 +8,9 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+body{
+    background-color: #fff;
+}
 .heading{
     font-size: 2rem;
     text-align: center;
