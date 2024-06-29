@@ -39,8 +39,8 @@ Navigate to the backend directory
 ```
 
 Install Xampp and click on MySQL->admin
-
-- Create Tables
+- create Database "share_spot"
+- Create Tables in it
 ```bash
     create table user_details(
 	full_name varchar(100),
