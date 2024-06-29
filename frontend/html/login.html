@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+
+    <!-- remix icons  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body> 
+
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="/sign_in" autocomplete="off" class="sign-in-form" id="login-form">
+              <div class="logo">
+                <h4 style=" font-family: 'Times New Roman', Times, serif; font-weight: 900; font-size: 2rem; border-bottom: 2px solid #000;">ShareSpot</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registred yet?</h6>
+                <a href="#" class="toggle">Sign up</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    name="v_uname"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="username"
+                  />
+                  <label>User Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    name="v_pwd"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    id="password"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+                
+                <input type="submit" value="Sign In" class="sign-btn" />
+
+                <p class="text">
+                  Forgotten your password or you login datails?
+                  <a href="#">Get help</a> signing in
+                </p>
+              </div>
+            </form>
+
+            <form action="/email_send" autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                <h4 style=" font-family: 'Times New Roman', Times, serif; font-weight: 900; font-size: 2rem; border-bottom: 2px solid #000;">ShareSpot</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    name="name"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    name="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    name="uname"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Username</label>
+                </div>
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    name="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+                <div class="input-wrap">
+                  <input
+                    type="tel"
+                    name="mob_number"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Mobile No</label>
+                </div>
+                
+                <input type="submit" value="OTP" class="sign-btn" />
+
+                <p class="text">
+                  By signing up, I agree to the
+                  <a href="#">Terms of Services</a> and
+                  <a href="#">Privacy Policy</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="../img/img2.jpg" class="image img-1 show" alt="" style="height:350px;" />
+              <img src="../img/img3.jpg" class="image img-2" alt="" style="height:350px;"/>
+              <img src="../img/img6.jpg" class="image img-3" alt=""style="height:350px;" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Conference Room</h2>
+                  <h2>Meeting Room</h2>
+                  <h2>Auditorium</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  <!-- Javascript file -->
+    <script src="../js/login.js"></script>
+  </body>
+</html>
